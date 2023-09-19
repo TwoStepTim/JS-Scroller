@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ff0000;
+  }
+  
+  .scroller {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+  }
+  
+  .episodes {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .episode {
+    flex: 0 0 20%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .episode:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+  }
+  
+
+  .arrow {
+    width: 30px;
+    height: 40px;
+    
+    display: flex;
+   
+    cursor: pointer;
+  }
+  
